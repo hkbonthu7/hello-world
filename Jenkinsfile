@@ -34,7 +34,7 @@ pipeline{
             steps {
             sshagent(['deploy_user'])  {
                 sh 'pwd'
-                sh "scp -o StrictHostKeyChecking=no hello-world/webapp1/target/webapp1.war ubuntu@3.235.151.34:/opt/tomcat/apache-tomcat-8.5.68/webapps"
+                sh "scp -o StrictHostKeyChecking=no hello-world/webapp1/target/webapp.war ubuntu@3.236.76.228:/opt/tomcat/apache-tomcat-8.5.68/webapps"
     
 }
             }
